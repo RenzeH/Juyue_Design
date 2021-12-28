@@ -27,6 +27,7 @@
             font-family: 'Comfortaa', cursive;
             margin-left: 0px;
             margin-right: 0px;
+            height: 100vh; 
         }
         
         .navbar-toggler {
@@ -34,9 +35,9 @@
             border: 0px;
         }
 
-        .home{
+        .about{
             font-weight: 700;
-            color:black;
+            color: black;
         }
 
     </style>
@@ -44,10 +45,10 @@
 </head>
 
 
-<body>
+<body style="min-height:100%; position:relative;" >
 
     <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3 pl-4 pr-3">
-        <a class="navbar-brand mb-2 mt-2" href="#">JuYue</a>
+        <a class="navbar-brand mb-2 mt-2" href="/index.html">JuYue</a>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -58,19 +59,19 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
                 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> <p class="home">home</p> </a>
+                        <a class="nav-link" href="../index.html"> <p class="home">home</p> </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./ABOUT/ABOUT.html"> <p>about</p> </a>
+                        <a class="nav-link" href="#"> <p class="about">about</p> </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> <p>project</p></a>
+                        <a class="nav-link" href="#"> <p class="project">project</p></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./CONTACT/CONTACT.html"> <p class="contact">contact</p></a>
+                        <a class="nav-link" href="#"> <p class="contact">contact</p></a>
                     </li>
 
                 </ul>
@@ -93,50 +94,23 @@
             </div>
     </nav>
 
-    <div class="container mt-3">
+    <div class="container" style="margin-top: 5%;">
+
         <div class="row">
-            <div class="col-12 col-md-12 text-body">
-                <video autoplay muted class="banner img-fluid" type="video/mp4" src="./VDO/001-150.mp4" type="video/mp4" ></video>
+            <div class="col-12 mt-3 mb-5 d-flex justify-content-center">
+                <img class="img-fluid" src="../IMG/JuYueDesign_FM/LOGO.png" alt="" style="height: 10rem;">
             </div>
         </div>
-        
-    </div>
-
-    <div class="container mt-5 mb-3">
         <div class="row">
-            <p>A few items that are well-designed and easy to match can accompany us for a long time and bring us satisfaction and confidence.
-                We can use it every day without getting bored, because it always goes well with us.
-                If we can find one or two such items in each category, we can find our true self in style.</p>
-        </div>
-    </div>
-
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col-md-4 text-center mb-1 mt-1">
-                <div href="" class="border pt-3 pb-3">
-                    <a class="d-block" href=""><i class="bi bi-rulers text-dark"></i></a>
-                    <a href="youtube.com" class="text-decoration-none text-dark">product design</a>
-                </div>
-            </div>
-
-            <div class="col-md-4 text-center mb-1 mt-1">
-                <div class="border pt-3 pb-3">
-                    <a class="d-block" href=""><i class="bi bi-image text-dark"></i></a>
-                    <a href="youtube.com" class="text-decoration-none text-dark">graphic design</a>
-                </div>
-            </div>
-            <div class="col-md-4 text-center mb-1 mt-">
-                <div class="border pt-3 pb-3">
-                    <a class="d-block" href=""><i class="bi bi-easel text-dark"></i></a>
-                    <a href="youtube.com" class="text-decoration-none text-dark">project planning</a>
-                </div>
+            <div class="col-12" >
+                <p>Juyue Co., Ltd. is committed to the research, development and design of industrial technology products and life technology products, with strong R&D and innovation energy. In the early days of industrial machinery, it focused on the development of small confidential milling processing machinery. In recent years, it has gradually shifted from industrial machinery to life technology products. With experience in design, technology research and development, and production processes, Orange Company adheres to the concept of "good things are simple, and good design brings us an unforgettable experience", and continues to improve and grow.</p>
             </div>
         </div>
-        
+    
     </div>
-
-    <div class="container-fluid">
-        <div class="row align-items-center" style="height: 6rem;">
+    
+    <div class="container-fluid" style="position:absolute; bottom:3rem;>
+        <div class="row align-items-center style="height: 6rem;">
             <div class="col-12">
                 
                 <p style="font-size: 0.65rem;" class="text-center mb-0 text-dark">Copyright © 2021 JuYue co.,Ltd All rights reserved. </p>
@@ -144,7 +118,7 @@
             </div>
 
         </div>
-        
+            
     </div>
 
     

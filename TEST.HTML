@@ -4,19 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JuYue Design - Official Website</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./IMG/JuYueDesign_FM/icon.ico"/>
+  
+  <meta name="description=" content="Official Website of JuYue Design."/>
+  <meta name="keyword" content="Juyue, 橘越設計, 橘越, JuYue Design, JuYue Design co.,Ltd">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./styles.css" rel="stylesheet" type="text/css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+
     <style>
     
         body{
             font-family: 'Comfortaa', cursive;
+            margin-left: 0px;
+            margin-right: 0px;
         }
         
         .navbar-toggler {
@@ -24,21 +33,78 @@
             border: 0px;
         }
 
-        .burger-lines{
-            background-color:orange;
-        }
-
     </style>
+
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("nav.html"); 
+    });
+    </script>
 
 </head>
 
-<body>
-    
-  <div class="burger burger-arrow">
-    <div class="burger-lines"></div>
-  </div>
 
-  <div class="b-container-item" style="background-color:#474787"><div class="b-container-item-inner"><div class="burger burger-slide open"><div class="burger-lines"></div></div><span class="item-title">Slide</span></div></div>
+<body>
+
+  <div id="includedContent"></div>
+    
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 col-md-12 text-body">
+                <img class="banner img-fluid" src="./IMG/BANER.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container mt-5 mb-3">
+        <div class="row">
+            <p>A few items that are well-designed and easy to match can accompany us for a long time and bring us satisfaction and confidence.
+                We can use it every day without getting bored, because it always goes well with us.
+                If we can find one or two such items in each category, we can find our true self in style.</p>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-4 text-center mb-1 mt-1">
+                <div href="" class="border pt-3 pb-3">
+                    <a class="d-block" href=""><i class="bi bi-rulers text-dark"></i></a>
+                    <a href="youtube.com" class="text-decoration-none text-dark">product design</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center mb-1 mt-1">
+                <div class="border pt-3 pb-3">
+                    <a class="d-block" href=""><i class="bi bi-image text-dark"></i></a>
+                    <a href="youtube.com" class="text-decoration-none text-dark">graphic design</a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-1 mt-">
+                <div class="border pt-3 pb-3">
+                    <a class="d-block" href=""><i class="bi bi-easel text-dark"></i></a>
+                    <a href="youtube.com" class="text-decoration-none text-dark">project planning</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container-fluid">
+        <div class="row align-items-center" style="height: 6rem;">
+            <div class="col-12">
+                
+                <p style="font-size: 0.65rem;" class="text-center mb-0 text-dark">Copyright © 2021 JuYue co.,Ltd All rights reserved. </p>
+                <p style="font-size: 0.65rem;" class="text-center mb-0 text-dark">This website is designed by JuYue co.,Ltd and RENZE.</p>
+            </div>
+
+        </div>
+        
+    </div>
+
+    
 
 </body>
 </html>

@@ -134,6 +134,9 @@
 
     $("#project").click(function(event){
         event.preventDefault();
+        $('#dlDropDown').collapse({
+        toggle: true
+        })
         $("#inner").html('');
         $("#inner").load("./project/project.html");
         $( "li.nav-item a" ).removeClass( "active" );

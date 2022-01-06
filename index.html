@@ -36,6 +36,7 @@
 
     </head>
 
+    <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
     <body>
 
@@ -112,6 +113,13 @@
 <script>
 
     $("#inner").load("./home/home.html")
+
+    video.addEventListener('loadedmetadata', function() {
+        if (video.buffered.length === 0) return;
+
+        const bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
+        console.log(`${bufferedSeconds} seconds of video are ready to play.`);
+    });
 
     $("#home").click (function(event){
         event.preventDefault();

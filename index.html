@@ -115,7 +115,7 @@
 
     $("#home").click (function(event){
         event.preventDefault();
-        $("#dlDropDown").load(location.href + "#dlDropDown");
+        bsCollapse.hide();
         $("#inner").html('');
         $("#inner").load("./home/home.html");
         $( "li.nav-item a" ).removeClass( "active" );
@@ -124,8 +124,7 @@
 
     $("#about").click(function(event){
         event.preventDefault();
-        $("#nav").html('');
-        $("#nav").load(location.href);
+        bsCollapse.hide();
         $("#inner").html('');
         $("#inner").load("./about/about.html");
         $( "li.nav-item a" ).removeClass( "active" );
@@ -134,11 +133,7 @@
 
     $("#project").click(function(event){
         event.preventDefault();
-        
-        $('#dlDropDown').collapse({
-        toggle: true
-        })
-
+        bsCollapse.hide();
         $("#inner").html('');
         $("#inner").load("./project/project.html");
         $( "li.nav-item a" ).removeClass( "active" );
@@ -147,10 +142,14 @@
 
     $("#contact").click(function(event){
         event.preventDefault();
+        bsCollapse.hide();
         $("#inner").html('');
         $("#inner").load("./contact/contact.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#contact" ).addClass( "active" );
     });
+
+    var navbarContent = document.getElementById('navbarSupportedContent');
+    var bsCollapse = new bootstrap.Collapse( navbarContent, {toggle: false} );
 
 </script>

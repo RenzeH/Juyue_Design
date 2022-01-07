@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JuYue Design - Official Website</title>
         <link rel="shortcut icon" type="image/x-icon" href="./home/img/icon.ico"/>
+        <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
         
         <meta name="description=" content="Official Website of JuYue Design."/>
         <meta name="keyword" content="Juyue, 橘越設計, 橘越, JuYue Design, JuYue Design co.,Ltd">
@@ -64,6 +65,10 @@
                         <li class="nav-item">
                             <a class="nav-link" id="project" href=""><p>project</p></a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" id="nft" href=""><p>nft</p></a>
+                        </li>
         
                         <li class="nav-item">
                             <a class="nav-link" id="contact" href=""><p>contact</p></a>
@@ -90,6 +95,7 @@
                 </div>
 
         </nav>
+
         
         <div id="inner"></div>
         
@@ -140,6 +146,15 @@
         $("#inner").load("./project/project.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#project" ).addClass( "active" );
+    });
+
+    $("#nft").click(function(event){
+        event.preventDefault();
+        bsCollapse.hide();
+        $("#inner").html('');
+        $("#inner").load("./nft/nft.html");
+        $( "li.nav-item a" ).removeClass( "active" );
+        $( "#nft" ).addClass( "active" );
     });
 
     $("#contact").click(function(event){

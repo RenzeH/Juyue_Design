@@ -1,1 +1,3 @@
-import selenium 
+import pyautogui
+
+print(pyautogui.position()) 

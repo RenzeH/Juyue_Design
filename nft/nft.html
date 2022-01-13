@@ -1,0 +1,32 @@
+<div class="container mb-3">
+    <div class="row">
+        <div class="col-12 mt-1 mb-3 p-0 d-flex justify-content-center">
+            <img class="img-fluid ml-4 mr-2" src="./nft/img/a.jpg" alt="" style="width: 45%; max-width: 20rem; border-radius: 0.5rem;">
+            <img class="img-fluid mr-4 ml-2" src="./nft/img/b.jpg" alt="" style="width: 45%; max-width: 20rem; border-radius: 0.5rem;">
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+
+<div class="container mt-3 mb-3">
+    <div class="row">
+        <h3 class="mb-3"> NVR RACING LIMITS</h3>
+        <p>NVR RACING LIMITS is a blockchain collection on ETH. The FSAE Student racing team of National Yang Ming Chiao Tung University collection and trading of unique Student Formula Cars, Drivers and Components.</p>
+        <p>VR6 is the first electric race car of our team. The new electric drive system brings us long-lasting endurance. We are still working hard to build a new generation of electric vehicles under the continuous raging situation of the 2022 epidemic!
+
+            Most of the NFT proceeds will be used for the team's car building fund. The production of racing cars requires extremely large funds, and we will do our best to make the racing cars top in the world.
+            
+            Your support will be our motivation, and more NFTs will be launched in the future, so stay tuned!</p>
+        <div class="mt-5 mb-5"><a id=opensea href="https://opensea.io/collection/nvr-racing-limits" class="bg-dark text-light p-3 text-decoration-none">Check out on OpenSea</a></div> 
+    </div>
+</div>
+
+<script>
+    $("#opensea").click (function(event){
+        event.preventDefault();
+        $("#inner").html('');
+        $("#inner").load("./nft/opensea.html");
+    });
+
+</script>

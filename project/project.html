@@ -17,21 +17,54 @@
         <div class="row">
             <div class="col-md-4 text-center mb-1 mt-1">
                 <div href="" class="border pt-3 pb-3">
-                    <a class="d-block" href="#"><i class="bi bi-rulers text-dark"></i></a>
-                    <a href="#" class="text-decoration-none text-dark">product design</a>
+                    <a class="d-block" id="product" href=""><i class="bi bi-rulers text-dark"></i></a>
+                    <a href="" class="text-decoration-none text-dark" id="product">product design</a>
                 </div>
             </div>
 
             <div class="col-md-4 text-center mb-1 mt-1">
                 <div class="border pt-3 pb-3">
-                    <a class="d-block" href="#"><i class="bi bi-image text-dark"></i></a>
-                    <a href="#" class="text-decoration-none text-dark">graphic design</a>
+                    <a class="d-block" id="graphic" href=""><i class="bi bi-image text-dark"></i></a>
+                    <a href="" class="text-decoration-none text-dark" id="graphic">graphic design</a>
                 </div>
             </div>
             <div class="col-md-4 text-center mb-1 mt-">
                 <div class="border pt-3 pb-3">
-                    <a class="d-block" href="#"><i class="bi bi-easel text-dark"></i></a>
-                    <a href="#" class="text-decoration-none text-dark">project planning</a>
+                    <a class="d-block" id="planning" href=""><i class="bi bi-easel text-dark"></i></a>
+                    <a href="" class="text-decoration-none text-dark" id="planning">project planning</a>
                 </div>
             </div>
         </div>
+        
+    </div>
+
+    <script>
+    
+        $("#product").click(function(event){
+            event.preventDefault();
+            bsCollapse.hide();
+            $("#inner").html('');
+            $("#inner").load("./work/product/product.html");
+            $( "li.nav-item a" ).removeClass( "active" );
+            $( "#project" ).addClass( "active" );
+        });
+    
+        $("#graphic").click(function(event){
+            event.preventDefault();
+            bsCollapse.hide();
+            $("#inner").html('');
+            $("#inner").load("./work/graphic/graphic.html");
+            $( "li.nav-item a" ).removeClass( "active" );
+            $( "#project" ).addClass( "active" );
+        });
+    
+        $("#planning").click(function(event){
+            event.preventDefault();
+            bsCollapse.hide();
+            $("#inner").html('');
+            $("#inner").load("./work/planning/planning.html");
+            $( "li.nav-item a" ).removeClass( "active" );
+            $( "#project" ).addClass( "active" );
+        });
+    
+    </script>

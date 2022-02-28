@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 710 875" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-758.097,-3588)">
+        <g id="Artboard3" transform="matrix(1,0,0,1,758.097,-0.879992)">
+            <rect x="0" y="3588.88" width="709.49" height="874.581" style="fill:none;"/>
+            <g transform="matrix(1.48359,0,0,1.48359,-1605.82,1764.15)">
+                <g transform="matrix(1,0,0,1,-117.647,-156.047)">
+                    <g transform="matrix(1,0,0,1,321.727,287.343)">
+                        <circle cx="1117.42" cy="1312.01" r="138.04"/>
+                    </g>
+                    <g transform="matrix(4.80723,0,0,4.80723,1400.68,1565.02)">
+                        <path d="M1.885,0.511C2.212,0.184 2.656,0.001 3.118,0.001C3.656,0.001 4.165,0.25 4.495,0.674L6.29,2.98C6.619,3.403 6.735,3.954 6.605,4.474L6.058,6.664C6.001,6.894 6.068,7.139 6.236,7.307L8.693,9.764C8.861,9.932 9.106,10 9.337,9.942L11.526,9.395C12.046,9.265 12.597,9.381 13.02,9.71L15.326,11.504C16.155,12.149 16.231,13.374 15.489,14.115L14.455,15.149C13.715,15.889 12.609,16.214 11.578,15.851C8.939,14.923 6.543,13.412 4.568,11.431C2.587,9.456 1.077,7.06 0.148,4.422C-0.214,3.392 0.111,2.285 0.851,1.545L1.885,0.511ZM15.854,0.146C15.948,0.24 16.001,0.367 16.001,0.5C16.001,0.633 15.948,0.76 15.854,0.854L11.707,5L14.5,5C14.774,5 15,5.226 15,5.5C15,5.774 14.774,6 14.5,6L10.5,6C10.226,6 10,5.774 10,5.5L10,1.5C10,1.226 10.226,1 10.5,1C10.774,1 11,1.226 11,1.5L11,4.293L15.146,0.146C15.24,0.052 15.367,-0.001 15.5,-0.001C15.633,-0.001 15.76,0.052 15.854,0.146Z" style="fill:white;"/>
+                    </g>
+                </g>
+                <g transform="matrix(0.737221,0,0,0.737221,545.829,534.437)">
+                    <text x="848.269px" y="1634.7px" style="font-family:'MalgunGothicBold', 'Malgun Gothic', sans-serif;font-weight:700;font-size:67.822px;">等待專員聯絡</text>
+                </g>
+                <g transform="matrix(0.737221,0,0,0.737221,604.66,468.974)">
+                    <text x="848.269px" y="1634.7px" style="font-family:'SpaceMono-Bold', 'Space Mono', monospace;font-weight:700;font-size:67.822px;">STEP.2</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

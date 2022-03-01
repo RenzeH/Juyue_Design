@@ -32,7 +32,7 @@
             height: 100%;
             top: 0;
             left: 0;
-            opacity: 0.7;
+            opacity: 1;
             background-color: #fff;
             z-index: 99;
             }
@@ -163,13 +163,6 @@
 
         </nav>
 
-        
-        <script>
-            $(window).on('load', function () {
-              $('#loading').hide();
-            }) 
-        </script>
-
         <div id="inner"></div>
 
         <div id="loading">
@@ -198,6 +191,10 @@
 
 <script>
 
+    $(window).on('load', function () {
+        $('#loading').hide();
+    }) 
+
     $("#inner").load("./home/home.html");
     
     $("#home").click (function(event){
@@ -225,9 +222,6 @@
         $("#inner").load("./project/project.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#project" ).addClass( "active" );
-        $(window).on("load",function(){
-            $(".loader-wrapper").fadeOut("slow");
-        });
     });
 
     $("#nft").click(function(event){
@@ -250,9 +244,5 @@
 
     var navbarContent = document.getElementById('navbarSupportedContent');
     var bsCollapse = new bootstrap.Collapse( navbarContent, {toggle: false} );
-
-    $(window).on("load",function(){
-        $(".loader-wrapper").fadeOut("slow");
-    });
 
 </script>

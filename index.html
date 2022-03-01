@@ -79,10 +79,6 @@
                 border: 0px;
             }
 
-            .iframe{ 
-            clip-path: inset(1px 1px);
-            }
-
         </style>
 
     </head>
@@ -125,6 +121,13 @@
         <div class="loader-wrapper">
             <span class="loader"><span class="loader-inner"></span></span>
         </div>
+        
+        <script>
+            $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
+
 
         <nav id="nav" class="navbar navbar-expand-lg navbar-light pt-3 pb-3 pl-4 pr-3">
         
@@ -206,10 +209,6 @@
 <script>
 
     $("#inner").load("./home/home.html");
-
-    $(window).on("load",function(){
-        $(".loader-wrapper").fadeOut("slow");
-    });
     
     $("#home").click (function(event){
         event.preventDefault();

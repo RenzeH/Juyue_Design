@@ -23,59 +23,22 @@
 
         <style>
 
-            body {
-            margin: 0;
-            padding: 0;
-            width:100vw;
-            height: 100vh;
-            background-color: #eee;
-            }
-            .content {
+            #loading {
+            position: fixed;
             display: flex;
             justify-content: center;
             align-items: center;
-            width:100%;
-            height:100%;
-            }
-            .loader-wrapper {
             width: 100%;
             height: 100%;
-            position: absolute;
             top: 0;
             left: 0;
-            background-color: #242f3f;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            }
-            .loader {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            position: relative;
-            border: 4px solid #Fff;
-            animation: loader 2s infinite ease;
-            }
-            .loader-inner {
-            vertical-align: top;
-            display: inline-block;
-            width: 100%;
+            opacity: 0.7;
             background-color: #fff;
-            animation: loader-inner 2s infinite ease-in;
+            z-index: 99;
             }
-            @keyframes loader {
-            0% { transform: rotate(0deg);}
-            25% { transform: rotate(180deg);}
-            50% { transform: rotate(180deg);}
-            75% { transform: rotate(360deg);}
-            100% { transform: rotate(360deg);}
-            }
-            @keyframes loader-inner {
-            0% { height: 0%;}
-            25% { height: 0%;}
-            50% { height: 100%;}
-            75% { height: 100%;}
-            100% { height: 0%;}
+
+            #loading-image {
+            z-index: 100;
             }
 
             p{
@@ -146,7 +109,7 @@
     
     <body>
 
-        <nav id="nav" class="navbar navbar-expand-lg navbar-light pt-3 pb-3 pl-4 pr-3">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light pt-3 pb-3 pl-5 pr-3">
         
             <a class="navbar-brand mb-2 mt-2" href="javascript:location.reload();">JuYue</a>
             
@@ -201,11 +164,17 @@
         </nav>
 
         
-        <div class="loader-wrapper">
-            <span class="loader"><span class="loader-inner"></span></span>
-        </div>
+        <script>
+            $(window).on('load', function () {
+              $('#loading').hide();
+            }) 
+        </script>
 
         <div id="inner"></div>
+
+        <div id="loading">
+            <img id="loading-image" src="./about/img/logo.png" alt="Loading..." />
+        </div>
         
         <footer>
             <div class="container-fluid">

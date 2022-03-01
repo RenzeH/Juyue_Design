@@ -23,13 +23,27 @@
 
         <style>
 
+            body {
+            margin: 0;
+            padding: 0;
+            width:100vw;
+            height: 100vh;
+            background-color: #eee;
+            }
+            .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height:100%;
+            }
             .loader-wrapper {
             width: 100%;
             height: 100%;
             position: absolute;
             top: 0;
             left: 0;
-            background-color: black;
+            background-color: #242f3f;
             display:flex;
             justify-content: center;
             align-items: center;
@@ -118,17 +132,6 @@
     
     <body>
 
-        <div class="loader-wrapper">
-            <span class="loader"><span class="loader-inner"></span></span>
-        </div>
-        
-        <script>
-            $(window).on("load",function(){
-            $(".loader-wrapper").fadeOut("slow");
-            });
-        </script>
-
-
         <nav id="nav" class="navbar navbar-expand-lg navbar-light pt-3 pb-3 pl-4 pr-3">
         
             <a class="navbar-brand mb-2 mt-2" href="javascript:location.reload();">JuYue</a>
@@ -184,6 +187,10 @@
         </nav>
 
         
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+
         <div id="inner"></div>
         
         <footer>
@@ -235,6 +242,9 @@
         $("#inner").load("./project/project.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#project" ).addClass( "active" );
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
     });
 
     $("#nft").click(function(event){
@@ -257,5 +267,9 @@
 
     var navbarContent = document.getElementById('navbarSupportedContent');
     var bsCollapse = new bootstrap.Collapse( navbarContent, {toggle: false} );
+
+    $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+    });
 
 </script>

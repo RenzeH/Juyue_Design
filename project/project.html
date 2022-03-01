@@ -4,7 +4,6 @@
             <video id="video" preload="auto" autoplay="autoplay" muted loop defaultmuted playsinline class="banner img-fluid iframe" type="video/mp4" src="./project/2022/sl-i/vdo/001.mov"></video>
         </div>
     </div>
-    
 </div>
 
 <div class="container mt-5 mb-3">
@@ -49,6 +48,10 @@
 </div>
 
 <script>
+
+    $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+    });
 
     $("#product").click(function(event){
         event.preventDefault();

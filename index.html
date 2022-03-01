@@ -189,7 +189,7 @@
                     <div class="col-12 p-0">
                         
                         <p style="font-size: 0.65rem;" class="text-center mb-0 p-0 text-dark">Copyright© 2022 JuYue co.,Ltd All rights reserved.</p>
-                        <p style="font-size: 0.65rem;" class="text-center mb-0 p-0 text-dark">This website is developed by RENZE. v328</p>
+                        <p style="font-size: 0.65rem;" class="text-center mb-0 p-0 text-dark">This website is developed by RENZE. v329</p>
                     </div>
 
                 </div>
@@ -205,11 +205,11 @@
 
 <script>
 
-        $(window).on("load",function(){
-            $(".loader-wrapper").fadeOut("slow");
-        });
-
     $("#inner").load("./home/home.html");
+
+    $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+    });
     
     $("#home").click (function(event){
         event.preventDefault();
@@ -236,9 +236,6 @@
         $("#inner").load("./project/project.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#project" ).addClass( "active" );
-        $(window).on("load",function(){
-            $(".loader-wrapper").fadeOut("slow");
-        });
     });
 
     $("#nft").click(function(event){

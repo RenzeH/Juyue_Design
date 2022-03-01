@@ -109,7 +109,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
                     
                         <li class="nav-item">
-                            <a class="nav-link active" id="home" href="javascript:location.reload();"><p>home</p></a>
+                            <a class="nav-link active" id="home" href=""><p>home</p></a>
                         </li>
         
                         <li class="nav-item">
@@ -174,8 +174,6 @@
 
 </html>
 
-
-
 <script>
 
     $(window).on('load', function () {
@@ -183,6 +181,15 @@
     }) 
 
     $("#inner").load("./home/home.html");
+
+    $("#home").click(function(event){
+        event.preventDefault();
+        bsCollapse.hide();
+        $("#inner").html('');
+        $("#inner").load("./home/home.html");
+        $( "li.nav-item a" ).removeClass( "active" );
+        $( "#home" ).addClass( "active" );
+    });
 
     $("#about").click(function(event){
         event.preventDefault();
@@ -197,9 +204,11 @@
         event.preventDefault();
         bsCollapse.hide();
         $("#inner").html('');
+        $('#loading').show();
         $("#inner").load("./project/project.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#project" ).addClass( "active" );
+        $('#loading').fadeOut(500);
     });
 
     $("#nft").click(function(event){

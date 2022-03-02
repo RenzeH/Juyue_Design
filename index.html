@@ -162,7 +162,7 @@
                     <div class="col-12 p-0">
                         
                         <p style="font-size: 0.65rem;" class="text-center mb-0 p-0 text-dark">Copyright© 2022 JuYue co.,Ltd All rights reserved.</p>
-                        <p style="font-size: 0.65rem;" class="text-center mb-0 p-0 text-dark">This website is developed by RENZE. v333</p>
+                        <p style="font-size: 0.65rem;" class="text-center mb-0 p-0 text-dark">This website is developed by RENZE. v334</p>
                     </div>
 
                 </div>
@@ -174,11 +174,13 @@
 
 </html>
 
+$(window).on('load', function () {
+    $('#loading').hide();
+}) 
+
 <script>
 
-    $(window).on('load', function () {
-        $('#loading').hide();
-    }) 
+    
 
     $("#inner").load("./home/home.html");
 
@@ -208,10 +210,6 @@
         $("#inner").load("./project/project.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#project" ).addClass( "active" );
-
-        $(document).ready(function(){
-            $('#loading').hide();
-        });
 
         //$('#loading').fadeOut(2000);
     });

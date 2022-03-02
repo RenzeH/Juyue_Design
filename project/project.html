@@ -49,6 +49,10 @@
 
 <script>
 
+    $("#video").on("loadstart", function() {
+        $('#loading').hide();
+    });
+
     $("#product").click(function(event){
         event.preventDefault();
         bsCollapse.hide();

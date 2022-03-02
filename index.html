@@ -38,7 +38,7 @@
             }
 
             #loading-image {
-                height:5rem ;
+                height:10rem ;
                 z-index: 100;
             }
 
@@ -153,7 +153,7 @@
         <div id="inner"></div>
 
         <div id="loading">
-            <img id="loading-image" src="./about/img/logo.png" alt="Loading..." />
+            <img id="loading-image" src="./about/img/jy.svg" alt="Loading..." />
         </div>
         
         <footer>
@@ -162,7 +162,7 @@
                     <div class="col-12 p-0">
                         
                         <p style="font-size: 0.65rem;" class="text-center mb-0 p-0 text-dark">Copyright© 2022 JuYue co.,Ltd All rights reserved.</p>
-                        <p style="font-size: 0.65rem;" class="text-center mb-0 p-0 text-dark">This website is developed by RENZE. v336</p>
+                        <p style="font-size: 0.65rem;" class="text-center mb-0 p-0 text-dark">This website is developed by RENZE. v337</p>
                     </div>
 
                 </div>
@@ -185,6 +185,7 @@
         event.preventDefault();
         bsCollapse.hide();
         $("#inner").html('');
+        $('#loading').show();
         $("#inner").load("./home/home.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#home" ).addClass( "active" );

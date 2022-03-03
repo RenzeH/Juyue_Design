@@ -53,6 +53,16 @@
         $('#loading').hide();
     });
 
+    $("#sl_i").click(function(event){
+            event.preventDefault();
+            bsCollapse.hide();
+            $("#inner").html('');
+            $('#loading').show();
+            $("#inner").load("./project/2022/sl_i/sl_i.html");
+            $( "li.nav-item a" ).removeClass( "active" );
+            $( "#project" ).addClass( "active" );
+        });
+
     $("#product").click(function(event){
         event.preventDefault();
         bsCollapse.hide();

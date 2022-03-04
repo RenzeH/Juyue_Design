@@ -134,7 +134,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" id="jypop" href=""><p>jypop</p></a>
+                            <a class="nav-link" id="jypip" href=""><p>jypip</p></a>
                         </li>
         
                         <li class="nav-item">
@@ -223,13 +223,13 @@
         $( "#project" ).addClass( "active" );
     });
 
-    $("#jypop").click(function(event){
+    $("#jypip").click(function(event){
         event.preventDefault();
         bsCollapse.hide();
         $("#inner").html('');
-        $("#inner").load("./jypop/jypop.html");
+        $("#inner").load("./jypip/jypip.html");
         $( "li.nav-item a" ).removeClass( "active" );
-        $( "#jypop" ).addClass( "active" );
+        $( "#jypip" ).addClass( "active" );
     });
 
     $("#contact").click(function(event){

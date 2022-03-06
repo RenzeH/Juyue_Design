@@ -1,0 +1,86 @@
+<div class="vimeo-full-width">
+    <iframe src="https://player.vimeo.com/video/685148456?h=4ea554273b?autoplay=1& muted=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div> 
+
+<div class="container mt-5 mb-3">
+    <div class="row">
+        <h3 class="mb-3">動態超前部署 Dynamic Advance Deployment</h3>
+        <p><u>我們團隊將最新技術與安全機制結合，打造最安全的行車記錄器系統。</u></p>
+        <P>在科技成長下，車廠間競爭的不再只有車輛的速度有多快，而是開發車輛中駕駛安全輔助系統。在109年度全般肇事原因首位為未保持行車安全距離與未注意車前狀態佔據六成以上的事故原因，許多車輛並未配備路況突發狀況預警系統，容易發生事故。透過影像辨識後用聲音提示駕駛並跳過車主的反應時間，系統直接給後方警示能夠在行車紀錄器及不同車輛上穩定運行。在Mio行車紀錄器上，增加使用車輛偵測系統Otsu's method 找尋影像中陰影區域來擷取陰影，並且判斷前車警示燈有無閃起，運用系統判斷後自動閃起與後鏡頭結合的警示燈，提醒後方行車。透過影像辨識判讀與執行，來達到防範疲勞或恍神以及未注意前車狀態的問題。</P>
+        <p>With the development of the improvement of technology, the competition between car manufacturers is no longer only the speed and performance of the vehicles, but also at the development of driving safety assistance systems in the vehicles. In 2020, the most common cause of accidents was the failure to maintain a safe driving distance and failure to pay attention to the state of the front of the vehicle, and both accounted for over 60% of accidents. The reason is they do not equip many vehicles with an early warning system for road conditions, so it is prone to accidents. Our system will voice prompts to the driver and skip the reaction time of the driver through the image recognition, the system directly warns to the rear that it also can run stably on the driving recorder and different vehicles.</p>
+    </div>
+</div>
+
+<div class="container ">
+    <div class="row mt-2 mb-5 align-items-top">
+
+        <hr class="mb-5">
+
+        <div class="col-12" >
+            <h1 class="mb-5" style="font-weight: 600;">MEMBER.</h1>  
+        </div>
+        
+        <div class="col-12 col-md-4 mt-3">
+            <div class="p-4" style="height: 100%; background-color: rgb(245, 245, 245);">
+                <img class="img-fluid" src="./about/img/renze.jpg" alt="">
+                <h2 class="mb-3 mt-3" style="font-weight: 600;">黃仁澤</h2>  
+                <p class="mb-1" style="font-weight: 600;">核心成員</p> 
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 mt-3">
+            <div class="p-4" style="height: 100%; background-color: rgb(245, 245, 245);">
+                <img class="img-fluid" src="./about/img/member.jpg" alt="">
+                <h2 class="mb-3 mt-3" style="font-weight: 600;">林品佑</h2>  
+                <p class="mb-1" style="font-weight: 600;">核心成員</p> 
+            </div>
+            
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-md-6 text-center mb-1 mt-1">
+            <div href="" class="border pt-3 pb-3">
+                <a class="d-block" href="#"><i class="bi bi-rulers text-dark"></i></a>
+                <a href="#" class="text-decoration-none text-dark">product design</a>
+            </div>
+        </div>
+
+        <div class="col-md-6 text-center mb-1 mt-1">
+            <div class="border pt-3 pb-3">
+                <a class="d-block" href="#"><i class="bi bi-image text-dark"></i></a>
+                <a href="#" class="text-decoration-none text-dark">graphic design</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        $("#sl_i_video").on("playing", function() {
+                $('#loading').hide();
+        });
+
+        $("#product").click(function(event){
+            event.preventDefault();
+            bsCollapse.hide();
+            $("#inner").html('');
+            $("#inner").load("./project/product/product.html");
+            $( "li.nav-item a" ).removeClass( "active" );
+            $( "#project" ).addClass( "active" );
+        });
+
+        $("#graphic").click(function(event){
+            event.preventDefault();
+            bsCollapse.hide();
+            $("#inner").html('');
+            $("#inner").load("./project/graphic/graphic.html");
+            $( "li.nav-item a" ).removeClass( "active" );
+            $( "#project" ).addClass( "active" );
+        });
+
+    </script>

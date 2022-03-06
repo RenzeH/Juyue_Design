@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 710 875" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1516.19,-3588)">
+        <g id="Artboard3" transform="matrix(1,0,0,1,1516.19,-0.879992)">
+            <rect x="0" y="3588.88" width="709.49" height="874.581" style="fill:none;"/>
+            <g transform="matrix(1.48359,0,0,1.48359,-2339.77,1764.15)">
+                <g transform="matrix(1,0,0,1,152.444,-220.953)">
+                    <g transform="matrix(1,0,0,1,543.707,352.249)">
+                        <circle cx="1117.42" cy="1312.01" r="138.04"/>
+                    </g>
+                    <g transform="matrix(5.49445,0,0,5.49445,1617.17,1621.68)">
+                        <path d="M8,0C8.213,-0 8.404,0.136 8.473,0.337L9.046,2L14,2C14.549,2 15,2.451 15,3L15,10C15,10.549 14.549,11 14,11L12.15,11L13.473,14.837C13.491,14.889 13.5,14.945 13.5,15C13.5,15.274 13.274,15.5 13,15.5C12.787,15.5 12.596,15.364 12.527,15.163L11.092,11L8.5,11L8.5,14C8.5,14.274 8.274,14.5 8,14.5C7.726,14.5 7.5,14.274 7.5,14L7.5,11L4.908,11L3.473,15.163C3.404,15.364 3.213,15.5 3,15.5C2.726,15.5 2.5,15.274 2.5,15C2.5,14.945 2.509,14.889 2.527,14.837L3.85,11L2,11C1.451,11 1,10.549 1,10L1,3C1,2.451 1.451,2 2,2L6.954,2L7.527,0.337C7.596,0.136 7.787,-0 8,0ZM2,3L2,10L14,10L14,3L2,3Z" style="fill:white;fill-rule:nonzero;"/>
+                    </g>
+                </g>
+                <g transform="matrix(0.737221,0,0,0.737221,1035.73,534.169)">
+                    <text x="855.865px" y="1634.7px" style="font-family:'MalgunGothicBold', 'Malgun Gothic', sans-serif;font-weight:700;font-size:67.822px;">公司內部討論</text>
+                    <text x="854.509px" y="1713.83px" style="font-family:'MalgunGothicBold', 'Malgun Gothic', sans-serif;font-weight:700;font-size:45.215px;">約</text>
+                    <text x="899.724px" y="1713.83px" style="font-family:'SpaceMono-Bold', 'Space Mono', monospace;font-weight:700;font-size:45.215px;">3~5</text>
+                    <text x="982.738px" y="1713.83px" style="font-family:'MalgunGothicBold', 'Malgun Gothic', sans-serif;font-weight:700;font-size:45.215px;">天</text>
+                    <text x="1027.95px" y="1713.83px" style="font-family:'SpaceMono-Bold', 'Space Mono', monospace;font-weight:700;font-size:45.215px;">(</text>
+                    <text x="1055.62px" y="1713.83px" style="font-family:'MalgunGothicBold', 'Malgun Gothic', sans-serif;font-weight:700;font-size:45.215px;">急件除外</text>
+                    <text x="1236.48px" y="1713.83px" style="font-family:'SpaceMono-Bold', 'Space Mono', monospace;font-weight:700;font-size:45.215px;">)</text>
+                </g>
+                <g transform="matrix(0.737221,0,0,0.737221,1096.91,468.974)">
+                    <text x="848.269px" y="1634.7px" style="font-family:'SpaceMono-Bold', 'Space Mono', monospace;font-weight:700;font-size:67.822px;">STEP.3</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

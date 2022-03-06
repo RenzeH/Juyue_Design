@@ -59,6 +59,7 @@
         event.preventDefault();
         bsCollapse.hide();
         $("#inner").html('');
+        $('#loading_jyp').show();
         $("#inner").load("./jypip/jypip.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#jypip" ).addClass( "active" );

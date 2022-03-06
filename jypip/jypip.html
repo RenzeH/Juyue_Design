@@ -2,7 +2,7 @@
     <div class="row align-items-center">
 
         <div class="col-12 col-md-6">
-            <img class="img-fluid" src="./jypip/new/new.jpg" alt="">
+            <img id="img" class="img-fluid" src="./jypip/new/new.jpg" alt="">
         </div>
 
         <div class="col-12 col-md-6">
@@ -57,5 +57,7 @@
 </div>
 
 <script>
-    $('#loading_jyp').fadeOut(2000);
+    document.getElementById('img').onload=function(){
+        $('#loading_jyp').fadeOut(2000);
+    };
 </script>

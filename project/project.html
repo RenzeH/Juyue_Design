@@ -35,7 +35,7 @@
         </div>
 
         <div class="col-md-6 text-center mb-1">
-            <a style="display:block; height: 10rem; background-image: url(./project/product/2022/mio_warning_system/img/mio_b.svg); background-repeat: no-repeat;" class="border d-flex justify-content-end align-items-end text-decoration-none text-dark pr-3 pb-2" id="UnionLight" href="">
+            <a style="display:block; height: 10rem; background-image: url(./project/product/2022/mio_warning_system/img/mio_b.svg); background-repeat: no-repeat;" class="border d-flex justify-content-end align-items-end text-decoration-none text-dark pr-3 pb-2" id="mio" href="">
                 Mio Warning System
             </a>
         </div>
@@ -51,7 +51,7 @@
 
         <div class="col-md-6 text-center mb-1">
             <div href="" class="border">
-                <a style="display:block;" class="text-decoration-none text-dark pt-3 pb-3" id="UnionLight" href="">
+                <a style="display:block;" class="text-decoration-none text-dark pt-3 pb-3" id="" href="">
                     <i class="bi bi-rulers text-dark"></i>
                     <br>coming soon
                 </a>
@@ -60,7 +60,7 @@
 
         <div class="col-md-6 text-center mb-1 mt-1">
             <div href="" class="border">
-                <a style="display:block;" class="text-decoration-none text-dark pt-3 pb-3" id="Mio" href="">
+                <a style="display:block;" class="text-decoration-none text-dark pt-3 pb-3" id="" href="">
                     <i class="bi bi-rulers text-dark"></i>
                     <br>coming soon
                 </a>
@@ -99,10 +99,11 @@
             $( "#project" ).addClass( "active" );
         });
 
-    $("#Mio").click(function(event){
+    $("#mio").click(function(event){
         event.preventDefault();
         bsCollapse.hide();
         $("#inner").html('');
+        $('#loading').show();
         $("#inner").load("./project/product/2022/mio_warning_system/mws.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#project" ).addClass( "active" );

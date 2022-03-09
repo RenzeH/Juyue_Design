@@ -12,9 +12,9 @@
         <meta name="keyword" content="Juyue, 橘越設計, 橘越, JuYue Design, JuYue Design co.,Ltd">
         <meta name="facebook-domain-verification" content="ki0kbzjw8my8chqsfzcjitl99yzpue" />
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
                 margin-right: 0px;
             }
             
-            .navbar-toggler {
+            .navbar-bg {
                 background-color: transparent;
                 border: 0px;
             }
@@ -49,6 +49,25 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
+            }
+
+            .navbar-light .navbar-nav .nav-link{
+                color: black;
+                font-size: 0.65em;
+                font-weight: 300;
+            }
+
+            .active{
+                color: black !important;
+                font-weight: 600;
+            }
+
+            .navbar-light .navbar-toggler-icon{
+                background-image: url(./about/img/hambug.svg)
+            }
+
+            .navbar-toggler{
+                border: 0px;
             }
 
 
@@ -85,145 +104,205 @@
     
     <body>
 
-        <nav id="nav" class="navbar navbar-expand-lg navbar-light pt-3 pb-3 pl-4 pr-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light rounded" aria-label="Eleventh navbar example">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
         
-            <a class="navbar-brand mb-2 mt-2" href="javascript:location.reload();">dev code here.</a>
-            
-            <button class="navbar-toggler" id="dlDropDown" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-                <div class=" collapse navbar-collapse "  id="navbarSupportedContent">
-        
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
-                    
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home" href=""><p>home</p></a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" id="about"  href=""><p>about</p></a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" id="project" href=""><p>project</p></a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" id="nft" href=""><p>nft</p></a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" id="contact" href=""><p>contact</p></a>
-                        </li>
-        
-                    </ul>
-        
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
-                    
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.facebook.com/JuyueDesign"><i class="bi bi-meta"></i></a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/rzdesign_2021/"><i class="bi bi-instagram"></i></a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto: Juyue.0501@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-                        </li>
-        
-                    </ul>
-
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form>
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                  </form>
                 </div>
+              </div>
+            </nav>
+        </div>
 
-        </nav>
+        <!---------------------------------------------------------------------------------------->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand text-dark" href="#">JuYue</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarText">
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home" href="">home</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" id="about"  href="">about</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" id="project" href="">project</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="jypip" href="">jypip</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact" href="">contact</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <div class="navbar-nav">
+                        <a class="nav-link text-dark" href="https://www.facebook.com/JuyueDesign"><i class="bi bi-meta"></i></a>
+                        <a class="nav-link text-dark" href="https://www.instagram.com/rzdesign_2021/"><i class="bi bi-instagram"></i></a>
+                        <a class="nav-link text-dark" href="mailto: Juyue.0501@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </span>
+              </div>
+            </div>
+          </nav>
+
 
         
-        <div id="inner">
+        <div style="margin-top: 7rem;" id="inner">
 
             <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-            <div class="container">
-
-                <div class="row mt-5">
-                    <div class="col-12 mt-5 mb-5 d-flex justify-left-center">
-                        <img class="img-fluid" src="./about/img/logo.png" alt="" style="height: 8rem;">
-                        <img class="img-fluid ml-3" src="./jypip/new/jypip_logo.svg" alt="" style="height: 8rem;">
-                    </div>
-                </div>
             
+            <div class="container mt-3">
                 <div class="row">
-                    <div class="col-12 mb-3" >
-                        <h3 class="mb-5" style="font-weight: 600;">JuYue Design</h3>  
-                        <h1 class="mb-5" style="font-weight: 600;"><u>To be a pioneer in industrial design.</u></h1>  
-                        <h4 class="mb-5" style="font-weight: 600;">→ Let's introducing our mission value and executives.</h4> 
-                    </div>
-            
-                    <hr class="mb-5">
-            
-                    <div class="col-12 mb-3" >
-                        <h1 class="mb-5" style="font-weight: 600;">MISSION.</h1>  
-                        <h3 class="mb-5" style="font-weight: 600;">Redefine the value, generate absolute value.</h3> 
-                        <p class="mb-5" >JuYue was the first company to be formally established, and was committed to producing excellent products in design. Our committed to the research, development and design of industrial technology and life technology products, with R&D and innovation energy.</h1>
-                    </div>
-            
-                    <hr class="mb-5">
-            
-                    <div class="col-12 mb-3" >
-                        <h1 class="mb-5" style="font-weight: 600;">VALUE.</h1>  
-                        <h3 class="mb-5" style="font-weight: 600;">Boldly, start.</h3> 
-                        <p>In the early days of industrial machinery, it focused on the development of small confidential milling processing machinery. </p>
-                        <p class="mb-5">In recent years, it has gradually shifted from industrial machinery to life technology products. With experience in design, technology research and development, and production processes, JuYue adheres to the concept of "good things are simple, and good design bring us an unforgettable experience" and continues to improve and grow.</h1>
+                    <div class="col-12 col-md-12">
+                        <video id="project_video" autoplay muted loop defaultmuted playsinline class="img-fluid iframe" type="video/mp4" src="./project/product/2022/sl_i/vdo/001.m4v"></video>
                     </div>
                 </div>
+            </div> 
             
-                <div class="row mt-2 align-items-center">
+            <div class="container mt-5 mb-3">
+                <div class="row">
             
-                    <hr class="mb-5">
-            
-                    <div class="col-12" >
-                        <h1 class="mb-5" style="font-weight: 600;">TEAM MEMBER.</h1>  
+                    <div class="col-12">
+                        <h3 class="mb-3">Smart, Simple, Safe.</h3>
+                        <p><u>A new series of products, innovating and evolving on the original technology.</u></p>
+                        <P>Breaking through the previous unlocking methods, unlocking is just at your fingertips. Complicated APP? Unrecognizable fingerprint?</P>
+                        <p>Let's Keep It Safe ;)</p>
+                        <div class="mt-5"><a href="" id="sl_i" class="text-light p-3 text-decoration-none" style="background-color: #FF6900;">Learn more →</a></div> 
                     </div>
             
-                </div>
-            
-                <div class="row mt-2 mb-2 align-items-center">
+                    <hr class="mt-5">
                     
-                    <div class="col-12 col-md-4 mt-3 mb-3" >
-                        <img class="img-fluid pr-5" src="./about/img/renze.jpg" alt="">
-                    </div>
-            
-                    <div class="col-12 col-md-8 mt-3 mb-3">                  
-                        <h2 class="mb-3" style="font-weight: 600;">黃仁澤 / Renze H.</h2>  
-                        <p class="mb-1" style="font-weight: 600;">President and CEO</p>
-                        <br>
-                        <p>Hello. I'm Renze.</p>
-                        <p>Studying at National Yangming Jiaotong University, in study career has spanned fields from vocational school electronics research to product design field. Extremely high requirements and levels in the field of industrial technology and design.</p>
-                    </div>
-            
                 </div>
-
-                <hr class="mb-3 mt-3">
-            
-                <div class="row mt-2 mb-2 align-items-center">
-                    
-                    <div class="col-12 col-md-4 mt-3 mb-3" >
-                        <img class="img-fluid pr-5" src="./about/img/py.jpg" alt="">
-                    </div>
-            
-                    <div class="col-12 col-md-8 mt-3 mb-3">                  
-                        <h2 class="mb-3" style="font-weight: 600;">林品佑 / Pinyu L.</h2>  
-                        <p class="mb-1" style="font-weight: 600;">CO-WORKER</p>
-                        <br>
-                        <p>Hello. I'm Renze.</p>
-                        <p>Studying at National Yangming Jiaotong University, in study career has spanned fields from vocational school electronics research to product design field. Extremely high requirements and levels in the field of industrial technology and design.</p>
-                    </div>
-            
-                </div>
-            
-                <hr class="mb-5">
-                        
             </div>
+            
+            
+            
+            <div class="container mb-3">
+                <div class="row">
+                    <h1>Product Design</h1>
+            
+                    <div class="col-md-6 text-center mb-3">
+                        <a style="display:block; height: 10rem; background-image: url(./project/product/2022/unionlight/img/union_b.svg); background-repeat: no-repeat;" class="border d-flex justify-content-end align-items-end text-decoration-none text-dark pr-3 pb-2" id="UnionLight" href="">
+                            UnionLight
+                        </a>
+                    </div>
+            
+                    <div class="col-md-6 text-center mb-3">
+                        <a style="display:block; height: 10rem; background-image: url(./project/product/2022/mio_warning_system/img/mio_b.svg); background-repeat: no-repeat;" class="border d-flex justify-content-end align-items-end text-decoration-none text-dark pr-3 pb-2" id="mio" href="">
+                            Mio Warning System
+                        </a>
+                    </div>
+            
+                    <div class="col-md-6 text-center mb-3">
+                        <a style="pointer-events: none; display:block; height: 10rem; background-image: url(./project/product/2022/); background-repeat: no-repeat;" class="border d-flex justify-content-end align-items-end text-decoration-none text-dark pr-3 pb-2" id="UnionLight" href="">
+                            CV3 Desktop CNC
+                        </a>
+                    </div>
+            
+                    <div class="col-md-6 text-center mb-3">
+                        <a style="pointer-events: none; display:block; height: 10rem; background-image: url(./project/product/2022/); background-repeat: no-repeat;" class="border d-flex justify-content-end align-items-end text-decoration-none text-dark pr-3 pb-2" id="mio" href="">
+                            GD3 Smart Lock
+                        </a>
+                    </div>
+            
+                    <hr class="mt-5">
+            
+                </div>
+            </div>
+            
+            <div class="container mb-5">
+                <div class="row">
+                    <h1>Graphic Design</h1>
+            
+                    <div class="col-md-6 text-center mb-3">
+                        <a style="pointer-events: none; display:block; height: 10rem; background-image: url(./project/product/2022/); background-repeat: no-repeat;" class="border d-flex justify-content-end align-items-end text-decoration-none text-dark pr-3 pb-2" id="mio" href="">
+                            Coming Soon...
+                        </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            
+            
+            <script>
+            
+                $("#project_video").on("playing", function() {
+                    $('#loading').hide();
+                });
+            
+                $("#sl_i").click(function(event){
+                        event.preventDefault();
+                        bsCollapse.hide();
+                        $("#inner").html('');
+                        $('#loading').show();
+                        $("#inner").load("./project/product/2022/sl_i/sl_i.html");
+                        $( "li.nav-item a" ).removeClass( "active" );
+                        $( "#project" ).addClass( "active" );
+                    });
+            
+                $("#UnionLight").click(function(event){
+                        event.preventDefault();
+                        bsCollapse.hide();
+                        $("#inner").html('');
+                        $('#loading').show();
+                        $("#inner").load("./project/product/2022/unionlight/union.html");
+                        $( "li.nav-item a" ).removeClass( "active" );
+                        $( "#project" ).addClass( "active" );
+                    });
+            
+                $("#mio").click(function(event){
+                    event.preventDefault();
+                    bsCollapse.hide();
+                    $("#inner").html('');
+                    $('#loading').show();
+                    $("#inner").load("./project/product/2022/mio_warning_system/mws.html");
+                    $( "li.nav-item a" ).removeClass( "active" );
+                    $( "#project" ).addClass( "active" );
+                });
+            
+            </script>
+
+
             <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
         </div>
@@ -241,6 +320,8 @@
                 
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     </body>
 

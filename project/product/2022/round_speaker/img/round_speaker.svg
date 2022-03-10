@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 4413 2034" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,0,-5293.07)">
+        <g id="Artboard4" transform="matrix(4.16667,0,0,4.16667,0,5293.07)">
+            <rect x="0" y="0" width="1059" height="488" style="fill:none;"/>
+            <g transform="matrix(0.280319,0,0,0.216889,-110.181,-1238.83)">
+                <rect x="1420.06" y="6309.74" width="1723.83" height="538.044" style="fill:rgb(83,83,83);"/>
+            </g>
+            <g transform="matrix(0.280319,0,0,0.322505,-110.181,-1811.25)">
+                <rect x="1420.06" y="6309.74" width="1723.83" height="538.044" style="fill:rgb(255,230,0);"/>
+            </g>
+            <g transform="matrix(0.29602,0,0,0.234367,-142.31,-1254.91)">
+                <rect x="1513.44" y="5741.91" width="301.709" height="151.533" style="fill:rgb(43,43,43);"/>
+            </g>
+            <g transform="matrix(0.280319,0,0,0.280319,-76.3511,-1512.93)">
+                <text x="2132.35px" y="6777.3px" style="font-family:'DINCondensed-Bold', 'DIN Condensed';font-weight:700;font-stretch:condensed;font-size:73.094px;fill:rgb(82,82,82);">RZ</text>
+            </g>
+        </g>
+    </g>
+</svg>

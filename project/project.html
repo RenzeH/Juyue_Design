@@ -1,4 +1,4 @@
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<!--Banner Item------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <div class="container mt-3">
     <div class="row">
@@ -24,7 +24,7 @@
     </div>
 </div>
 
-
+<!--Product List------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <div class="container mb-3">
     <div class="row">
@@ -150,49 +150,57 @@
     </div>
 </div>
 
-<div class="container mt-5">
+<!--Graphic List------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="container">
     <div class="row">
         <h1 class="mb-5">Graphic Design</h1>
     </div>
 </div>
 
 <div class="container mb-3">
-    <div class="row" data-masonry='{"percentPosition": true }'>
+    <div class="row">
         
-        <div class="col-6 col-md-3 p-3">
-            <a href="">
-                <img class="card-img" src="./project/graphic/2022/gd3.jpg" alt="">
-            </a>
-        </div>
-        
-        <div class="col-6 col-md-3 p-3">
-            <a href="">
-                <img class="card-img" src="./project/graphic/2022/PROPERTY BARCODE.jpg" alt="">
-            </a>
+        <div class="col-6 col-md-3 p-3" >
+            <div class="p-4 d-flex align-items-center" style="height: 100%; background-color: #fafafa;" >
+                <a href="">
+                    <img class="card-img" src="./project/graphic/2022/gd3.jpg" alt="">
+                </a>
+            </div>
         </div>
 
-        <div class="col-6 col-md-3 p-3">
-            <a href="">
-                <img class="card-img" src="./project/graphic/2022/2.webp" alt="">
-            </a>
+        <div class="col-6 col-md-3 p-3" >
+            <div class="p-4 d-flex align-items-center" style="height: 100%; background-color: #fafafa;" >
+                <a href="">
+                    <img class="card-img" src="./project/graphic/2022/PROPERTY BARCODE.jpg" alt="">
+                </a>
+            </div>
         </div>
 
-        <div class="col-6 col-md-3 p-3">
-            <a href="">
-                <img class="card-img" src="./project/graphic/2022/4.webp" alt="">
-            </a>
+        <div class="col-6 col-md-3 p-3" >
+            <div class="p-4 d-flex align-items-center" style="height: 100%; background-color: #fafafa;" >
+                <a href="">
+                    <img class="card-img" src="./project/graphic/2022/2.webp" alt="">
+                </a>
+            </div>
         </div>
 
-        <div class="col-6 col-md-3 p-3">
-            <a href="">
-                <img class="card-img" src="./project/graphic/2022/key.webp" alt="">
-            </a>
+        <div class="col-6 col-md-3 p-3" >
+            <div class="p-4 d-flex align-items-center" style="height: 100%; background-color: #fafafa;" >
+                <a href="">
+                    <img class="card-img" src="./project/graphic/2022/4.webp" alt="">
+                </a>
+            </div>
         </div>
 
-        
+        <div class="col-6 col-md-3 p-3" >
+            <div class="p-4 d-flex align-items-center" style="height: 100%; background-color: #fafafa;" >
+                <a href="">
+                    <img class="card-img" src="./project/graphic/2022/key.webp" alt="">
+                </a>
+            </div>
+        </div>
 
-        
-        
     </div>
 </div>
 
@@ -202,6 +210,7 @@
     </div>
 </div>
 
+<!--Script------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <script>
 
@@ -277,11 +286,6 @@
         $("#inner").load("./project/product/2022/cable/cable.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#project" ).addClass( "active" );
-    });
-
-    Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
-	var msnry = new Masonry('.grid');
-	msnry.layout();
     });
 
 </script>

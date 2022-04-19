@@ -191,6 +191,10 @@
                     <li class="nav-item">
                         <a class="nav-link pt-3 pb-3" id="contact" href="">contact</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link pt-3 pb-3 text-warning" id="careers" href="">careers</a>
+                    </li>
                 </ul>
                 <span class="navbar-text">
 
@@ -281,6 +285,15 @@
         $("#inner").load("./contact/contact.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#contact" ).addClass( "active" );
+    });
+
+    $("#careers").click(function(event){
+        event.preventDefault();
+        bsCollapse.hide();
+        $("#inner").html('');
+        $("#inner").load("./careers/careers.html");
+        $( "li.nav-item a" ).removeClass( "active" );
+        $( "#careers" ).addClass( "active" );
     });
 
     var navbarContent = document.getElementById('navbarText');

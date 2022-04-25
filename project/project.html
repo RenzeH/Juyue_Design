@@ -70,6 +70,25 @@
         </div>
 
         <div class="col-12 col-md-6">
+            <a href="" id="dnr" class="text-decoration-none text-dark">
+                <div class="card mb-3" style="border: 0; background-color: #fafafa;">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <img src="./project/product/2022/dnr/img/dnr.svg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">DNR</h5>
+                            <p class="card-text">DNR has a scooter mode and a straddle mode, can quickly switch functions, let users to commuting and play the spirit of outdoor adventure!</p>
+                            <p class="card-text"><small class="text-muted">Transportation render</small></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-12 col-md-6">
             <a href="" id="sl_i" class="text-decoration-none text-dark">
                 <div class="card mb-3" style="border: 0px; background-color: #fafafa;">
                     <div class="row g-0">
@@ -262,6 +281,16 @@
         $("#inner").html('');
         $('#loading').show();
         $("#inner").load("./project/product/2022/mio_warning_system/mws.html");
+        $( "li.nav-item a" ).removeClass( "active" );
+        $( "#project" ).addClass( "active" );
+    });
+
+    $("#dnr").click(function(event){
+        event.preventDefault();
+        bsCollapse.hide();
+        $("#inner").html('');
+        $('#loading').show();
+        $("#inner").load("./project/product/2022/dnr/dnr.html");
         $( "li.nav-item a" ).removeClass( "active" );
         $( "#project" ).addClass( "active" );
     });

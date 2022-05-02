@@ -72,7 +72,7 @@
     
             <div class="col-12 col-md-4 mt-3">
                 <div class="p-4" style="height: 100%; background-color: #fafafa;">
-                    <img class="img-fluid pr-5" src="./about/img/ch.jpeg" alt="">
+                    <img id="img" class="img-fluid pr-5" src="./about/img/ch.jpeg" alt="">
                     <h2 class="mb-3 mt-3" style="font-size: 1.5rem; font-weight: 600;">陳雲茵 / Cherlene</h2>  
                     <p class="mb-1" style="font-weight: 600;">CO-WORKER / 產業設計創新計畫</p> 
                     <br>
@@ -87,7 +87,9 @@
 </div>
 
 <Script>
-    $( window ).on( "load",function() {
-        $('#loading').hide();
-    });
+
+    document.getElementById('img').onload=function(){
+        $('#loading').fadeOut(2000);
+    };
+
 </Script>

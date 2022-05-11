@@ -303,3 +303,11 @@
     var bsCollapse = new bootstrap.Collapse( navbarContent, {toggle: false} );
 
 </script>
+
+<!--Leaving A Web Page Warning------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<script>
+    $(window).bind('beforeunload', function () {
+        return "確定要離開橘越官網嗎?";
+    });
+</script>

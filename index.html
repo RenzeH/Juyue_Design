@@ -177,7 +177,7 @@
         </script>
 
         <div id="loading">
-            <img class="loading-image animate__animated animate__bounce animate__infinite" src="./home/img/juyue.svg" alt="Loading..." />
+            <img class="loading-image animate__animated animate__bounce animate__infinite" src="./home/img/juyue.svg" alt="Loading..."/>
         </div>
 
         <div id="loading_jyp" style="display: none;">
@@ -188,7 +188,7 @@
             <div class="container">
 
                 <a class="navbar-brand" href="#">
-                    <img href="javascript:window.location.reload(true)" src="./home/img/juyue.svg" width="auto" height="40rem" alt="">
+                    <img class="homeToggle" src="./home/img/juyue.svg" width="auto" height="40rem" alt="">
                 </a>
 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -199,7 +199,7 @@
                 
                 <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link ml-3 mr-3 pt-3 pb-3 active" id="home" href="">home</a>
+                        <a class="homeToggle nav-link ml-3 mr-3 pt-3 pb-3 active" href="">home</a>
                     </li>
     
                     <li class="nav-item">
@@ -265,7 +265,9 @@
 
     $("#inner").load("./home/home.html");
 
-    $("#home").click(function(event){
+    
+
+    $(".homeToggle").click(function(event){
         event.preventDefault();
         bsCollapse.hide();
         $("#inner").html('');

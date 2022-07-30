@@ -30,31 +30,3 @@
         </div>
     </div>
 </div>
-
-<script>
-
-    $("#video").on("playing", function() {
-        $('#loading').hide();
-    });
-
-    $("#check_work").click(function(event){
-            event.preventDefault();
-            bsCollapse.hide();
-            $("#inner").html('');
-            $('#loading').show();
-            $("#inner").load("./project/project.html");
-            $( "li.nav-item a" ).removeClass( "active" );
-            $( "#project" ).addClass( "active" );
-        });
-
-    $("#check_jypip").click(function(event){
-        event.preventDefault();
-        bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading_jyp').show();
-        $("#inner").load("./jypip/jypip.html");
-        $( "li.nav-item a" ).removeClass( "active" );
-        $( "#jypip" ).addClass( "active" );
-    });
-
-</script>

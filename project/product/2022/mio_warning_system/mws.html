@@ -61,27 +61,4 @@
             </div>
         </div>
     </div>
-
-    <script>
-
-         $('#loading').fadeOut(2000);
-
-        $("#product").click(function(event){
-            event.preventDefault();
-            bsCollapse.hide();
-            $("#inner").html('');
-            $("#inner").load("./project/product/product.html");
-            $( "li.nav-item a" ).removeClass( "active" );
-            $( "#project" ).addClass( "active" );
-        });
-
-        $("#graphic").click(function(event){
-            event.preventDefault();
-            bsCollapse.hide();
-            $("#inner").html('');
-            $("#inner").load("./project/graphic/graphic.html");
-            $( "li.nav-item a" ).removeClass( "active" );
-            $( "#project" ).addClass( "active" );
-        });
-
-    </script>
+</div>

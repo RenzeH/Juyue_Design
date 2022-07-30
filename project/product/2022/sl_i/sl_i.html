@@ -79,31 +79,3 @@
         </div>
     </div>
 </div>
-
-
-
-    <script>
-
-        $("#sl_i_video").on("playing", function() {
-                $('#loading').hide();
-        });
-
-        $("#product").click(function(event){
-            event.preventDefault();
-            bsCollapse.hide();
-            $("#inner").html('');
-            $("#inner").load("./project/product/product.html");
-            $( "li.nav-item a" ).removeClass( "active" );
-            $( "#project" ).addClass( "active" );
-        });
-
-        $("#graphic").click(function(event){
-            event.preventDefault();
-            bsCollapse.hide();
-            $("#inner").html('');
-            $("#inner").load("./project/graphic/graphic.html");
-            $( "li.nav-item a" ).removeClass( "active" );
-            $( "#project" ).addClass( "active" );
-        });
-
-    </script>

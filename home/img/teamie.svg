@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 186 186" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-82,-4315)">
+        <g id="Artboard3" transform="matrix(1,0,0,1,-0.946507,-0.97801)">
+            <rect x="82.947" y="4315.98" width="185.462" height="185.462" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="82.947" y="4315.98" width="185.462" height="185.462"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1,0,0,1,0.946507,0.97801)">
+                    <circle cx="175.678" cy="4408.71" r="92.731"/>
+                </g>
+                <g transform="matrix(1,0,0,1,-10.709,3.35657)">
+                    <g transform="matrix(71.0071,0,0,71.0071,233.168,4431.11)">
+                    </g>
+                    <text x="143.557px" y="4431.11px" style="font-family:'IBMPlexMono-Medium', 'IBM Plex Mono', monospace;font-weight:500;font-size:71.007px;fill:white;">T<tspan x="190.564px " y="4431.11px ">m</tspan></text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

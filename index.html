@@ -239,8 +239,8 @@
             case "#webdev":
                 webdev();
                 break;
-            case "#ystudio":
-                ystudio();
+            case "#studio1530":
+                studio1530();
                 break;
             case "#graphic":
                 graphic();
@@ -342,11 +342,11 @@
             $("#webdev").addClass("active");
     };
 
-    const ystudio = () => {
+    const studio1530 = () => {
             bsCollapse.hide();
             $("#inner").html('');
             $('#loading').show();
-            $("#inner").load("./webdev/ystudio.html", loading_complete);
+            $("#inner").load("./webdev/studio1530.html", loading_complete);
             $("li.nav-item a").removeClass("active");
         };
 

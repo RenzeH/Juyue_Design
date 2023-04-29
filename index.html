@@ -239,6 +239,9 @@
             case "#webdev":
                 webdev();
                 break;
+            case "#ystudio":
+                ystudio();
+                break;
             case "#graphic":
                 graphic();
                 break;
@@ -337,6 +340,14 @@
             $("#inner").load("./webdev/webdev.html", loading_complete);
             $("li.nav-item a").removeClass("active");
             $("#webdev").addClass("active");
+    };
+
+    const ystudio = () => {
+            bsCollapse.hide();
+            $("#inner").html('');
+            $('#loading').show();
+            $("#inner").load("./webdev/ystudio.html", loading_complete);
+            $("li.nav-item a").removeClass("active");
         };
 
     const banner_item = () => {

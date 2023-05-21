@@ -7,11 +7,6 @@
         -webkit-text-fill-color: transparent;
     }
 
-    .p {
-        font-size: 0.15rem;
-        line-height: 0.3rem;
-        margin-bottom: 0;
-    }
 
     .smc {
         height: 17rem;
@@ -48,23 +43,81 @@
         box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
     }
 
-    @media screen and (min-width: 120px) {
-        h1 {
-            font-size: 1rem;
-        }
+/* rwd */
+    @media (max-width: 1200px) {
+    #intro_lg {
+    font-size: 2.5rem !important;
+    margin-top: 12% !important;
+
     }
+    #intro_p{
+        font-size: 16px !important;
+        line-height: 1.4rem !important;
+    } 
+    #survice p{
+        font-size: 0.9rem;
+        line-height: 0.5rem;
+    }
+    } 
+
+    @media (max-width: 750px) {
+    #intro_sm {
+    font-size: 2.2rem !important;
+    margin-top: 25% !important;
+    }
+    #intro_p{
+        font-size: 0.8rem !important;
+        line-height: 1.4rem !important;
+    } 
+    #intro_sm{
+        display:block !important;
+    }
+    #intro_lg{
+        display:none !important;
+    }
+    } 
+    
+    @media (max-width: 500px) {
+    #intro_sm {
+    font-size: 1.6rem !important;
+    margin-top: 25% !important;
+    color: navy;
+
+    }
+    #intro_p{
+        font-size: 10px !important;
+        line-height: 1.2rem !important;
+    } 
+    #intro_sm{
+        display:block !important;
+    }
+    #intro_lg{
+        display:none !important;
+    }
+    } 
+
+
+    
 </style>
 
 <div class="container" style="height: 100%;">
-    <div class="row">
-        <div class="col-12 mb-3 text-center" style="display: flex;flex-direction: column;align-items: center;">
-            <h1 class="mb-3" style="font-weight: 600;margin-top: 18vh;font-size: 4rem;">
-                專業網頁設計，協助您建立品牌形象，<br>
+    <div class="row" style="justify-content: center;">
+        <div class=" col-12 mb-3 text-center" style="display: flex;flex-direction: column;align-items: center;; ">
+            <h1 class="mb-3" id="intro_sm" style="display: none; font-weight: 600;margin-top: 18vh;font-size: 4rem; width: 75%;">
+                專業網頁設計，協助您建立品牌形象，
                 <span style="position: relative;">
                     從廣大市場中脫穎而出。
                 </span>
             </h1>
-            <p class="mb-5" style="margin-top: 7vh; font-weight: 400;line-height: 2rem;">
+
+            <h1 class="mb-3" id="intro_lg" style="font-weight: 600;margin-top: 18vh;font-size: 4rem; ">
+                專業網頁設計，協助您建立品牌形象， <br>
+                <span style="position: relative;">
+                    從廣大市場中脫穎而出。
+                </span>
+            </h1>
+
+            <p class="mb-5" id="intro_p" style="margin-top: 7vh; font-weight: 400;line-height: 2rem; width: 75%">
                 Juyue提供一站式的整合服務，透過網頁設計、架設、行銷、影像規劃，將讓您的品牌更有看頭，並能在激烈的市場競爭中脫穎而出。不論您是剛起步的新創公司、規模企業、教育單位還是研究機構，我們都能為您量身打造符合需求的解決方案。
             </p>
             <a style="height: 3rem;width: 12rem;padding: 0px;border-radius: 0%;display: flex; justify-content: center;align-items: center;"
@@ -78,7 +131,7 @@
 
 <!-- -------------------服務項目 區塊------------------- -->
 
-<div class="container mb-5">
+<div class="container mb-5" id="survice">
     <div class="row">
         <div class="col-12 mb-3">
             <h3 class="mb-3" style="font-weight: 600;">服務項目.</h3>
@@ -308,7 +361,7 @@
                     <div class="col-12 col-md-12 col-lg-12">
                         <ul class="imf">
                             <li><i class="bi bi-arrow-right-circle-fill"></i>單頁網站架構排版設計</li>
-                            <li><i class="bi bi-arrow-right-circle-fill"></i>6個區域項目</li>
+                            <li><i class="bi bi-arrow-right-circle-fill"></i>5個區域項目</li>
                             <li><i class="bi bi-arrow-right-circle-fill"></i>基礎的圖文設計優化</li>
                             <li><i class="bi bi-arrow-right-circle-fill"></i>線上聯繫表單系統</li>
                             <li><i class="bi bi-arrow-right-circle-fill"></i>3次架構調整修改服務</li>
@@ -356,13 +409,14 @@
         </div>
 
         <div class="col-12 mt-5 mb-5 text-center">
-            <h2 class="" style="font-weight: 600;"><i class="bi bi-magic"></i>為了打造最佳的品牌形象，我們提供全面的解決方案</h2>
+            <h2 class="mb-3" style="font-weight: 600;"><i class="bi bi-magic"></i>為了打造最佳的品牌形象，我們提供全面的解決方案</h2>
             <p>我們專注於細節，確保推廣和使用的效果達到最佳水平。在這個過程中，我們提供策略規劃、視覺設計、網站開發、內容管理以及網路行銷等一系列服務，為您的品牌創建獨特並具有吸引力的網站形象。</p>
         </div>
 
-        <div class="col-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center text-center">
-            <div class="py-3 px-4 mx-1 my-3 bg-light rounded-circle" style="
-                    width: 15rem; height: 15rem;    
+        <div class="py-3 px-4 col-6 col-md-6 col-lg-3 text-center d-flex justify-content-center">
+            <div class="bg-light rounded-circle" style="
+                    width: 12rem; height: 12rem;  
+                    margin: 0;  
                     display: flex;  
                     align-items: center;   
                     justify-content: center;
@@ -374,23 +428,24 @@
             </div>
         </div>
 
-        <div class="col-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center text-center">
-            <div class="py-3 px-4 mx-1 my-3 bg-light rounded-circle" style="
-                    width: 15rem; height: 15rem;    
+        <div class="py-3 px-4 col-6 col-md-6 col-lg-3 text-center d-flex justify-content-center">
+            <div class="bg-light rounded-circle" style="
+                    width: 12rem; height: 12rem;    
                     display: flex;  
                     align-items: center;   
                     justify-content: center;
                     flex-direction: column;">
-                <i class="bi-rulers" style="font-size: 3rem;"></i>
+                <i class="bi-rulers" 
+                style="font-size: 3rem;"></i>
                 <h5 class="mb-3 mt-2" style="font-weight: 600;">
                     LOGO設計
                 </h5>
             </div>
         </div>
 
-        <div class="col-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center text-center">
-            <div class="py-3 px-4 mx-1 my-3 bg-light rounded-circle" style="
-                    width: 15rem; height: 15rem;    
+        <div class="py-3 px-4 col-6 col-md-6 col-lg-3 text-center d-flex justify-content-center">
+            <div class="bg-light rounded-circle" style="
+                    width: 12rem; height: 12rem;    
                     display: flex;  
                     align-items: center;   
                     justify-content: center;
@@ -402,9 +457,9 @@
             </div>
         </div>
 
-        <div class="col-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center text-center">
-            <div class="py-3 px-4 mx-1 my-3 bg-light rounded-circle" style="
-                    width: 15rem; height: 15rem;    
+        <div class="py-3 px-4 col-6 col-md-6 col-lg-3 text-center d-flex justify-content-center">
+            <div class="bg-light rounded-circle" style="
+                    width: 12rem; height: 12rem;    
                     display: flex;  
                     align-items: center;   
                     justify-content: center;
@@ -416,7 +471,7 @@
             </div>
         </div>
 
-        <div class="col-12 d-flex justify-content-center align-items-center text-center">
+        <div class="col-12 mt-5 d-flex justify-content-center align-items-center text-center">
             <a style="height: 3rem;width: 12rem;padding: 0px;border-radius: 0%;display: flex; justify-content: center;align-items: center;"
                 href="mailto:Juyue.0501@gmail.com" class="mb-5 bg-black text-light btn">馬上聯繫我們
             </a>

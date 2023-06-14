@@ -1,229 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JuYue Design - Official Website</title>
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="./home/img/icon.ico"
+        />
+        <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+        <meta name="description=" content="Official Website of JuYue Design." />
+        <meta
+            name="keyword"
+            content="Juyue, 橘越設計, 橘越有限公司, JuYue Design, JuYue co.,Ltd"
+        />
+        <meta
+            name="facebook-domain-verification"
+            content="ki0kbzjw8my8chqsfzcjitl99yzpue"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/da3156815b.js"
+            crossorigin="anonymous"
+        ></script>
+        <style>
+            ::-webkit-scrollbar {
+                display: none;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JuYue Design - Official Website</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./home/img/icon.ico" />
-    <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
-    <meta name="description=" content="Official Website of JuYue Design." />
-    <meta name="keyword" content="Juyue, 橘越設計, 橘越有限公司, JuYue Design, JuYue co.,Ltd">
-    <meta name="facebook-domain-verification" content="ki0kbzjw8my8chqsfzcjitl99yzpue" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://kit.fontawesome.com/da3156815b.js" crossorigin="anonymous"></script>
-    <style>
-        ::-webkit-scrollbar {
-            display: none;
+            #loading {
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 1;
+                background-color: #fff;
+                z-index: 99;
+            }
+
+            #loading_jyp {
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 1;
+                background-color: #fff;
+                z-index: 99;
+            }
+
+            .loading-image {
+                height: 3rem;
+                z-index: 100;
+            }
+
+            p {
+                font-size: 1rem;
+                font-family: "Poppins", sans-serif;
+            }
+
+            body {
+                font-family: "Poppins", sans-serif;
+                color: #050038;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .navbar-toggler {
+                background-color: transparent;
+                border: 0px;
+            }
+
+            .vimeo-full-width {
+                padding: 45% 0 0 0;
+                position: relative;
+            }
+
+            .vimeo-full-width iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            a {
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+
+            .navbar-brand {
+                margin-right: 0;
+            }
+
+            .navbar-collapse {
+                padding-right: 0.8rem !important;
+            }
+        </style>
+        <style>
+            .iframe {
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <!-- Messenger 洽談外掛程式 Code -->
+    <div id="fb-root"></div>
+    <!-- Your 洽談外掛程式 code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <script>
+        var chatbox = document.getElementById("fb-customer-chat");
+        chatbox.setAttribute("page_id", "115643793562219");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: "v12.0",
+            });
+        };
+
+        (function (d, s, id) {
+            var js,
+                fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src =
+                "https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-WXX5X6EWFM"
+    ></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
         }
+        gtag("js", new Date());
 
-        #loading {
-            position: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            opacity: 1;
-            background-color: #fff;
-            z-index: 99;
+        gtag("config", "G-WXX5X6EWFM");
+    </script>
+    <!--Block Back But------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <script type="text/javascript">
+        function disableBack() {
+            window.history.forward();
         }
+        setTimeout("disableBack()", 0);
+        window.onunload = function () {
+            null;
+        };
+    </script>
+    <!--Body Main------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-        #loading_jyp {
-            position: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            opacity: 1;
-            background-color: #fff;
-            z-index: 99;
-        }
-
-        .loading-image {
-            height: 3rem;
-            z-index: 100;
-        }
-
-        p {
-            font-size: 1rem;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: #050038;
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-
-        .navbar-toggler {
-            background-color: transparent;
-            border: 0px;
-        }
-
-        .vimeo-full-width {
-            padding: 45% 0 0 0;
-            position: relative;
-        }
-
-        .vimeo-full-width iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        a {
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .navbar-brand {
-            margin-right: 0;
-        }
-
-        .navbar-collapse {
-            padding-right: 0.8rem !important;
-        }
-    </style>
-    <style>
-        .iframe {
-            border-radius: 30px;
-        }
-    </style>
-</head>
-<!-- Messenger 洽談外掛程式 Code -->
-<div id="fb-root"></div>
-<!-- Your 洽談外掛程式 code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
-<script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "115643793562219");
-    chatbox.setAttribute("attribution", "biz_inbox");
-</script>
-<!-- Your SDK code -->
-<script>
-    window.fbAsyncInit = function () {
-        FB.init({
-            xfbml: true,
-            version: 'v12.0'
-        });
-    };
-
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXX5X6EWFM"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-WXX5X6EWFM');
-</script>
-<!--Block Back But------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<script type="text/javascript">
-    function disableBack() { window.history.forward(); }
-    setTimeout("disableBack()", 0);
-    window.onunload = function () { null };
-</script>
-<!--Body Main------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-<body onbeforeunload="return myFunction()">
-    <div id="loading">
-        <img class="loading-image animate__animated animate__bounce animate__infinite" src="./home/img/juyue.svg"
-            alt="Loading..." />
-    </div>
-    <div id="loading_jyp" style="display: none;">
-        <img src="./jypip/new/jypip_logo.svg" alt="Loading..." style="height:6rem ;z-index: 100;" />
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: rgb(255, 255, 255); z-index:5;">
-        <div class="container">
-            <a class="navbar-brand" href="#/">
-                <img class="homeToggle" src="./home/img/juyue.svg" width="auto" height="40rem" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="homeToggle nav-link ml-3 mr-3 pt-3 pb-3 active" href="#/">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pt-3 pb-3" id="about" href="#about">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pt-3 pb-3" id="project" href="#project">project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pt-3 pb-3" id="contact" href="#contact">contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pt-3 pb-3" id="careers" href="#careers">careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pt-3 pb-3 text-warning" id="webdev" href="#webdev">品牌形象服務</a>
-                    </li>
-                </ul>
-                <span class="navbar-text">
-                    <div class="navbar-nav">
-                        <a class="nav-link text-dark" href="https://www.facebook.com/JuyueDesign"><i
-                                class="bi-meta"></i></a>
-                        <a class="nav-link text-dark" href="https://www.instagram.com/rzdesign_2021/"><i
-                                class="bi-instagram"></i></a>
-                        <a class="nav-link text-dark" href="mailto: Juyue.0501@gmail.com"><i
-                                class="bi-envelope-fill"></i></a>
-                    </div>
-                </span>
-            </div>
+    <body onbeforeunload="return myFunction()">
+        <div id="loading">
+            <img
+                class="loading-image animate__animated animate__bounce animate__infinite"
+                src="./home/img/juyue.svg"
+                alt="Loading..."
+            />
         </div>
-    </nav>
-    <div id="inner" style="margin-top: 6rem;"></div>
-    <footer>
-        <div class="container-fluid">
-            <div class="row align-items-center " style="height: 6rem;">
-                <div class="col-12 p-0">
-                    <p style="font-size: 0.65rem;" class="text-center mb-0 p-0 text-dark">Copyright© 2022 JuYue CO.,
-                        LTD. All rights reserved.</p>
-                    <p style="font-size: 0.65rem;" class="text-center mb-0 p-0 text-dark">This website is developed by
-                        RENZE. v385 [Stable Release]</p>
+        <div id="loading_jyp" style="display: none">
+            <img
+                src="./jypip/new/jypip_logo.svg"
+                alt="Loading..."
+                style="height: 6rem; z-index: 100"
+            />
+        </div>
+        <nav
+            class="navbar navbar-expand-lg navbar-light fixed-top"
+            style="background: rgb(255, 255, 255); z-index: 5"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="#/">
+                    <img
+                        class="homeToggle"
+                        src="./home/img/juyue.svg"
+                        width="auto"
+                        height="40rem"
+                        alt=""
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="homeToggle nav-link ml-3 mr-3 pt-3 pb-3 active"
+                                href="#/"
+                                >home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link pt-3 pb-3"
+                                id="about"
+                                href="#about"
+                                >about</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link pt-3 pb-3"
+                                id="project"
+                                href="#project"
+                                >project</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link pt-3 pb-3"
+                                id="contact"
+                                href="#contact"
+                                >contact</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link pt-3 pb-3"
+                                id="careers"
+                                href="#careers"
+                                >careers</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link pt-3 pb-3 text-warning"
+                                id="webdev"
+                                href="#webdev"
+                                >品牌形象服務</a
+                            >
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <div class="navbar-nav">
+                            <a
+                                class="nav-link text-dark"
+                                href="https://www.facebook.com/JuyueDesign"
+                                ><i class="bi-meta"></i
+                            ></a>
+                            <a
+                                class="nav-link text-dark"
+                                href="https://www.instagram.com/rzdesign_2021/"
+                                ><i class="bi-instagram"></i
+                            ></a>
+                            <a
+                                class="nav-link text-dark"
+                                href="mailto: Juyue.0501@gmail.com"
+                                ><i class="bi-envelope-fill"></i
+                            ></a>
+                        </div>
+                    </span>
                 </div>
             </div>
-        </div>
-    </footer>
-</body>
-
+        </nav>
+        <div id="inner" style="margin-top: 6rem"></div>
+        <footer>
+            <div class="container-fluid">
+                <div class="row align-items-center" style="height: 6rem">
+                    <div class="col-12 p-0">
+                        <p
+                            style="font-size: 0.65rem"
+                            class="text-center mb-0 p-0 text-dark"
+                        >
+                            Copyright© 2022 JuYue CO., LTD. All rights reserved.
+                        </p>
+                        <p
+                            style="font-size: 0.65rem"
+                            class="text-center mb-0 p-0 text-dark"
+                        >
+                            This website is developed by RENZE. v385 [Stable
+                            Release]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
+
 <!--Leaving Web Page Warning------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--Scriptn------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <script>
@@ -285,16 +393,16 @@
                 homeToggle();
                 break;
         }
-    }
+    };
 
-    window.addEventListener('hashchange', route);
+    window.addEventListener("hashchange", route);
 
     /* Routing Method */
 
     const homeToggle = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
+        $("#inner").html("");
+        $("#loading").show();
         $("#inner").load("./home/home.html", loading_complete);
         $("li.nav-item a").removeClass("active");
         $("#home").addClass("active");
@@ -302,8 +410,8 @@
 
     const about = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
+        $("#inner").html("");
+        $("#loading").show();
         $("#inner").load("./about/about.html", loading_complete);
         $("li.nav-item a").removeClass("active");
         $("#about").addClass("active");
@@ -311,8 +419,8 @@
 
     const jypip = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading_jyp').show();
+        $("#inner").html("");
+        $("#loading_jyp").show();
         $("#inner").load("./jypip/jypip.html", loading_complete);
         $("li.nav-item a").removeClass("active");
         $("#jypip").addClass("active");
@@ -320,8 +428,8 @@
 
     const project = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
+        $("#inner").html("");
+        $("#loading").show();
         $("#inner").load("./project/project.html", loading_complete);
         $("li.nav-item a").removeClass("active");
         $("#project").addClass("active");
@@ -329,8 +437,8 @@
 
     const contact = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
+        $("#inner").html("");
+        $("#loading").show();
         $("#inner").load("./contact/contact.html", loading_complete);
         $("li.nav-item a").removeClass("active");
         $("#contact").addClass("active");
@@ -338,8 +446,8 @@
 
     const careers = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
+        $("#inner").html("");
+        $("#loading").show();
         $("#inner").load("./careers/careers.html", loading_complete);
         $("li.nav-item a").removeClass("active");
         $("#careers").addClass("active");
@@ -347,8 +455,8 @@
 
     const webdev = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
+        $("#inner").html("");
+        $("#loading").show();
         $("#inner").load("./webdev/webdev.html", loading_complete);
         $("li.nav-item a").removeClass("active");
         $("#webdev").addClass("active");
@@ -356,106 +464,127 @@
 
     const studio1530 = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
+        $("#inner").html("");
+        $("#loading").show();
         $("#inner").load("./webdev/studio1530.html", loading_complete);
         $("li.nav-item a").removeClass("active");
     };
 
     const banner_item = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
-        $("#inner").load("./project/product/2022/sl_i/sl_i.html", loading_complete);
+        $("#inner").html("");
+        $("#loading").show();
+        $("#inner").load(
+            "./project/product/2022/sl_i/sl_i.html",
+            loading_complete
+        );
         $("li.nav-item a").removeClass("active");
         $("#project").addClass("active");
-    }
+    };
 
     const sl_i = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
-        $("#inner").load("./project/product/2022/sl_i/sl_i.html", loading_complete);
+        $("#inner").html("");
+        $("#loading").show();
+        $("#inner").load(
+            "./project/product/2022/sl_i/sl_i.html",
+            loading_complete
+        );
         $("li.nav-item a").removeClass("active");
         $("#project").addClass("active");
     };
 
     const UnionLight = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
-        $("#inner").load("./project/product/2022/unionlight/union.html", loading_complete);
+        $("#inner").html("");
+        $("#loading").show();
+        $("#inner").load(
+            "./project/product/2022/unionlight/union.html",
+            loading_complete
+        );
         $("li.nav-item a").removeClass("active");
         $("#project").addClass("active");
     };
 
     const mio = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
-        $("#inner").load("./project/product/2022/mio_warning_system/mws.html", loading_complete);
+        $("#inner").html("");
+        $("#loading").show();
+        $("#inner").load(
+            "./project/product/2022/mio_warning_system/mws.html",
+            loading_complete
+        );
         $("li.nav-item a").removeClass("active");
         $("#project").addClass("active");
     };
 
     const dnr = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
-        $("#inner").load("./project/product/2022/dnr/dnr.html", loading_complete);
+        $("#inner").html("");
+        $("#loading").show();
+        $("#inner").load(
+            "./project/product/2022/dnr/dnr.html",
+            loading_complete
+        );
         $("li.nav-item a").removeClass("active");
         $("#project").addClass("active");
     };
 
     const cv3 = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
-        $("#inner").load("./project/product/2022/cv3/cv3.html", loading_complete);
+        $("#inner").html("");
+        $("#loading").show();
+        $("#inner").load(
+            "./project/product/2022/cv3/cv3.html",
+            loading_complete
+        );
         $("li.nav-item a").removeClass("active");
         $("#project").addClass("active");
     };
 
     const Round_Speaker = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
-        $("#inner").load("./project/product/2022/round_speaker/round.html", loading_complete);
+        $("#inner").html("");
+        $("#loading").show();
+        $("#inner").load(
+            "./project/product/2022/round_speaker/round.html",
+            loading_complete
+        );
         $("li.nav-item a").removeClass("active");
         $("#project").addClass("active");
     };
 
     const cable = () => {
         bsCollapse.hide();
-        $("#inner").html('');
-        $('#loading').show();
-        $("#inner").load("./project/product/2022/cable/cable.html", loading_complete);
+        $("#inner").html("");
+        $("#loading").show();
+        $("#inner").load(
+            "./project/product/2022/cable/cable.html",
+            loading_complete
+        );
         $("li.nav-item a").removeClass("active");
         $("#project").addClass("active");
     };
 
     const graphic = () => {
         bsCollapse.hide();
-        $("#inner").html('');
+        $("#inner").html("");
         $("#inner").load("./project/graphic/graphic.html", loading_complete);
         $("li.nav-item a").removeClass("active");
         $("#project").addClass("active");
     };
 
-    var navbarContent = document.getElementById('navbarText');
+    var navbarContent = document.getElementById("navbarText");
     var bsCollapse = new bootstrap.Collapse(navbarContent, { toggle: false });
 
     const loading_complete = () => {
-        $('#loading').fadeOut(1000);
-        $('#loading_jyp').hide();
-    }
-
+        $("#loading").fadeOut(1000);
+        $("#loading_jyp").hide();
+    };
 
     /* Enrty Point */
 
     $("#inner").load("./home/home.html", () => {
         route();
     });
-
-
 </script>

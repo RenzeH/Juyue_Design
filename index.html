@@ -202,7 +202,7 @@
             />
         </div>
         <nav
-            class="navbar navbar-expand-lg navbar-light fixed-top"
+            class="navbar navbar-expand-lg navbar-light fixed-top pb-3"
             style="background: rgb(255, 255, 255); z-index: 5"
         >
             <div class="container">
@@ -277,7 +277,7 @@
                     </ul>
                     <span class="navbar-text">
                         <div class="navbar-nav">
-                            <a
+                            <!-- <a
                                 class="nav-link text-dark"
                                 href="https://www.facebook.com/JuyueDesign"
                                 ><i class="bi-meta"></i
@@ -288,10 +288,11 @@
                                 ><i class="bi-instagram"></i
                             ></a>
                             <a
-                                class="nav-link text-dark"
+                                class="nav-link text-dark mr-5"
                                 href="mailto: Juyue.0501@gmail.com"
                                 ><i class="bi-envelope-fill"></i
-                            ></a>
+                            ></a> -->
+                            <a href="https://lin.ee/TCCODMS"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" border="0"></a>
                         </div>
                     </span>
                 </div>
@@ -376,9 +377,12 @@
             case "#project/Round_Speaker":
                 Round_Speaker();
                 break;
-            case "#project/cable":
-                cable();
+            case "#paypal":
+                paypal();
                 break;
+            case "#paypal":
+            cable();
+            break;
             default:
                 homeToggle();
                 break;
@@ -397,6 +401,14 @@
         $("li.nav-item a").removeClass("active");
         $("#home").addClass("active");
     };
+
+    const paypal = () => {
+            bsCollapse.hide();
+            $("#inner").html("");
+            $("#loading").show();
+            $("#inner").load("./home/paypal.html", loading_complete);
+            $("li.nav-item a").removeClass("active");
+        };
 
     const about = () => {
         bsCollapse.hide();

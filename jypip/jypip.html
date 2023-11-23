@@ -1,32 +1,97 @@
+<style>
+    p{
+        font-family: 'Cardo', serif;
+    }
+</style>
+
+<script>
+$(document).ready(function(){
+    $('a.smooth-scroll').on('click', function(e) {
+        e.preventDefault(); 
+        var target = this.hash;
+        var $target = $(target);
+        var offset = 100;  // 这里是您的导航栏或头部的高度
+        $('html, body').animate({
+            'scrollTop': $target.offset().top - offset
+        }, 5, 'linear');
+    });
+});
+</script>
+
 <div class="container mt-5 mb-3">
     <div class="row">
         <div class="col-md-4 text-center mb-1 mt-1">
-            <a href="#jypip" class="text-decoration-none">
+            <a href="#JYPIP" class="text-decoration-none smooth-scroll">
                 <div class=" pt-3 pb-3" style="border: 0; background-color: #f3f3f4; border-radius: 1rem;">
-                    <div class="d-block" id="product"><i class="bi bi-rulers text-dark"></i></div>
-                    <div class="text-decoration-none text-dark">Outerwear</div>
+                    <div class="text-decoration-none text-dark">JYPIP原生系列</div>
                 </div>
             </a>
         </div>
         <div class="col-md-4 text-center mb-1 mt-1">
-            <a href="#jypip" class="text-decoration-none">
+            <a href="#NVR" class="text-decoration-none smooth-scroll">
                 <div class=" pt-3 pb-3" style="border: 0; background-color: #f3f3f4; border-radius: 1rem;">
-                    <div class="d-block" id="product"><i class="bi bi-cone text-dark"></i></div>
-                    <div class="text-decoration-none text-dark">Headwear</div>
+                    <div class="text-decoration-none text-dark">NVR</div>
                 </div>
             </a>
         </div>
         <div class="col-md-4 text-center mb-1 mt-1">
-            <a href="#jypip" class="text-decoration-none">
+            <a href="" class="text-decoration-none smooth-scroll">
                 <div class=" pt-3 pb-3" style="border: 0; background-color: #f3f3f4; border-radius: 1rem; ">
-                    <div class="d-block" id="product"><i class="bi bi-exclamation-triangle-fill text-dark"></i></div>
-                    <div class="text-decoration-none text-dark">Accessories</div>
+                    <div class="text-decoration-none text-dark">Poster</div>
                 </div>
             </a>
         </div>
     </div>
 </div>
-<div class="container mt-3" style="padding-left: 12px; border: 0; background-color: #f3f3f4; border-radius: 1rem;">
+
+<div class="container" id="JYPIP">
+    <div class="row mt-5">
+        <h2 class="mb-">JYPIP原生系列</h2>
+    </div>
+</div>
+
+<div class="container mt-3 product-container">
+    <div class="row">
+        <div class="col-12 col-md-4 p-3 d-flex flex-column align-items-center">
+            <img style="width: 100%;" src="./jypip/new/new.png" alt="">
+            <p class="mt-3 mb-1 text-center">C.C. ✕ JYPIP 大草原のキツネ</p>
+            <p class="m-0">NT$ 750</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="container" id="NVR">
+    <div class="row mt-5">
+        <h2 class="mb-">NVR 方程式賽車系列</h2>
+    </div>
+</div>
+
+<div class="container mt-3 product-container">
+    <div class="row">
+
+        <div class="col-12 col-md-4 p-3 d-flex flex-column align-items-center">
+            <img style="width: 100%;" src="./jypip/new/nvr_bag.jpg" alt="">
+            <p class="mt-3 mb-1 text-center">NYCU Formula Student Racing Canvas Bag</p>
+            <p class="m-0">NT$ 650</p>
+        </div>
+
+        <div class="col-12 col-md-4 p-3 d-flex flex-column align-items-center">
+            <img style="width: 100%;" src="./jypip/new/nvr_t.jpg" alt="">
+            <p class="mt-3 mb-1 text-center">NYCU Formula Student Racing T</p>
+            <p class="m-0">NT$ 650</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- <div class="container mt-3" style="padding-left: 12px; border: 0; background-color: #f3f3f4; border-radius: 1rem;">
     <div class="row align-items-center">
         <div class="col-12 col-md-6">
             <img id="img" class="img-fluid" src="./jypip/new/new.png" alt="">
@@ -44,4 +109,4 @@
             </P>
         </div>
     </div>
-</div>
+</div> -->

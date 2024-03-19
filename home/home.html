@@ -67,24 +67,35 @@
 </div>
 
 <div class="container">
-    
-    <div class="d-flex flex-column justify-content-center align-items-center p-2 pb-5 bg-light" style="border-radius: 1rem">
+    <div class="d-flex flex-column justify-content-center align-items-center p-2 pb-5 bg-light"
+        style="border-radius: 1rem">
         <div class="row title text-center m-5 mb-3">
             <h1>我們的企業合作夥伴</h1>
             <p>橘越與許多創新團隊合作，共同創造出優秀的成果，彼此互助。</p>
         </div>
 
-        <div class="row d-flex flex-row justify-content-center">
-            
-            <div class="my-3 col-12 col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <!-- Ensure the row contains both columns without wrapping -->
+        <div class="row d-flex flex-row justify-content-center" style="width: -webkit-fill-available;
+">
+
+            <!-- Column for the first icon -->
+            <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center">
                 <a target="_blank" href="https://teamie.tw" class="text-decoration-none">
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <img style="height: 6.5rem;" src="./home/img/teamie.svg" alt="">
+                        <img style="height: 6.5rem;" src="./home/img/teamie.svg" alt="Teamie">
                         <p class="text-dark mt-3 mb-0">Teamie</p>
                     </div>
                 </a>
             </div>
-                
+
+            <!-- Column for the second icon -->
+            <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center">
+                <a target="_blank" href="https://nycuvr.github.io/NYCU_VR/" class="text-decoration-none">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img style="height: 6.5rem;" src="./home/img/nvr.png" alt="NYCU Vulpes Racing">
+                        <p class="text-dark mt-3 mb-0">NYCU Vulpes Racing</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
